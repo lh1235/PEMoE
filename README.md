@@ -56,7 +56,3 @@ Both settings use 12 input steps and 12 prediction steps, hidden width 128, 4 pr
 The first stage trains on the full graph. Each later stage inherits the preceding best checkpoint, includes all new nodes, and fills a 20% seed budget with representative nodes. Mandatory new nodes may exceed that budget. Two-hop physical neighbors provide context, while forecast supervision applies to seed nodes. Full-graph validation MAE selects checkpoints; node history descriptors use training observations only.
 
 Checkpoints, logs, node selections, and `metrics.json` are written under `outputs/<dataset>/<run>/`. Metrics report cumulative MAE, RMSE, and MAPE over the first 3, 6, and 12 prediction steps. Data and generated outputs are excluded by `.gitignore`.
-
-### Acknowledgements
-
-The evolving traffic forecasting framework and data preparation build on [TrafficStream](https://github.com/AprLie/TrafficStream).
