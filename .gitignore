@@ -1,0 +1,37 @@
+# Python and development artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.history/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environments and credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+*.whl
+
+# Local data, training results, checkpoints, and logs
+data/
+res/
+outputs/
+runs/
+logs/
+*.npy
+*.npz
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.log

@@ -1,0 +1,15 @@
+name: pemoe
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.1.0
+  - pytorch-cuda=11.8
+  - numpy=1.24.3
+  - networkx=3.1
+  - tqdm=4.66.1
+  - pip
+  - pip:
+      - torch-geometric==2.4.0
